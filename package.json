@@ -1,0 +1,29 @@
+{
+  "name": "pa-backend",
+  "version": "1.0.0",
+  "description": "Personal Assistant Backend",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "nodemon src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mohit-S-Rane/pa-app.git"
+  },
+  "keywords": [
+    "pa",
+    "personal",
+    "backend"
+  ],
+  "author": "Mohit Rane",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Mohit-S-Rane/pa-app/issues"
+  },
+  "homepage": "https://github.com/Mohit-S-Rane/pa-app#readme",
+  "devDependencies": {
+    "nodemon": "^3.1.0",
+    "prettier": "^3.2.5"
+  }
+}
