@@ -1,1 +1,1 @@
-export const DB_NAME = "paAppDB"
+export const DB_NAME = "mega-blog-db"
