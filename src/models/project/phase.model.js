@@ -1,24 +1,22 @@
 import mongoose from "mongoose";
 
 const phaseSchema = new mongoose.Schema({
+    phaseIndex: {
+        type: Number,
+        required: true
+    },
+    phaseName: {
+        type: Number,
+        required: true
+    },
     projectId: {
         type: mongoose.Schema.Types.ObjectId,
         ref: "Project"
     },
-    workList: [{
-        workId: {
-            type: mongoose.Schema.Types.ObjectId,
-            ref: "Work"
-        },
-        workIndex: {
-            type: Number,
-            required: true
-        },
-        workName: {
-            type: Number,
-            required: true
-        }
-    }]
+    workListId: {
+        type: mongoose.Schema.Types.ObjectId,
+        ref: "Work"
+    }
 }, { timestamps: true })
 
 const Phase = mongoose.model("Phase", phaseSchema)

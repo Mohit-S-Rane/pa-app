@@ -9,7 +9,7 @@ const workSchema = new mongoose.Schema({
         type: String,
         required: true
     },
-    task: [{
+    taskList: [{
         taskId: {
             type: mongoose.Schema.Types.ObjectId,
             ref: "Task"

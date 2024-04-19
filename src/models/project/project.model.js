@@ -1,27 +1,17 @@
 import mongoose from "mongoose";
 
 const projectSchema = new mongoose.Schema({
-    name: {
+    projectName: {
         type: String,
         required: true
     },
-    description: {
+    projectDescription: {
         type: String,
         required: true
     },
-    phase: [{
-        phaseId: {
-            type: mongoose.Schema.Types.ObjectId,
-            ref: "Phase"
-        },
-        phaseIndex: {
-            type: Number,
-            required: true
-        },
-        phaseName: {
-            type: Number,
-            required: true
-        }
+    phaseId: [{
+        type: mongoose.Schema.Types.ObjectId,
+        ref: "Phase"
     }]
 
 }, {timestamps: true})
