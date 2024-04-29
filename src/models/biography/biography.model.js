@@ -1,4 +1,5 @@
 import mongoose from "mongoose";
+import mongooseAggregatePaginate from "mongoose-aggregate-paginate-v2";
 
 const biographySchema = new mongoose.Schema({
     name: {
@@ -10,5 +11,7 @@ const biographySchema = new mongoose.Schema({
         ref: "Chapter"
     }
 },{timestamps: true})
+
+biographySchema.plugin(mongooseAggregatePaginate)
 
 export const Biography = mongoose.model("Biography", biographySchema)
