@@ -27,6 +27,13 @@ const userSchema = new mongoose.Schema({
         unique: true,
         lowercase: true
     },
+    avatar: {
+        type: String,
+        required: true
+    },
+    coverImage: {
+        type: String
+    },
     contactNo: {
         type: String,
         required: true,
