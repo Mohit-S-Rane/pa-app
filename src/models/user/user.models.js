@@ -23,7 +23,6 @@ const userSchema = new mongoose.Schema({
     },
     displayName: {
         type: String,
-        required: true,
         unique: true,
         lowercase: true
     },
@@ -36,12 +35,10 @@ const userSchema = new mongoose.Schema({
     },
     contactNo: {
         type: String,
-        required: true,
         unique: true,
     },
     profession: {
         type: String,
-        required: true
     },
     goalId: [{
         type: mongoose.Schema.Types.ObjectId,
